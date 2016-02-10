@@ -7,7 +7,7 @@
     Private category As String
     Private hourlyWage As Double
     Public Const maxHours As Integer = 120
-    Public tamañopene As Integer = 30
+    'olakase
 
     Public Sub New(workerId As Integer, name As String, surname1 As String, surname2 As String, dni As String, category As String, hourlyWage As Double)
         WorkerId1 = workerId
