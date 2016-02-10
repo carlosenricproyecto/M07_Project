@@ -205,6 +205,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="menu.aspx" />
     <Content Include="newCourse.aspx" />
     <Content Include="newEnrollment.aspx" />
     <Content Include="newWorker.aspx" />
@@ -389,6 +392,27 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Models\IdentityModels.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
