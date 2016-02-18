@@ -71,7 +71,26 @@ Public Class classEnterprise
         End Set
     End Property
 
-    Public Sub addWorker()
+    Public Sub addWorker(type As Integer)
+        Dim wor
+        Select Case type
+            Case 1
+                'administrativo
+                wor = New classADworker()
+            Case 2
+                'contable
+                wor = New classCONworker()
+            Case 3
+                'directivo
+                wor = New classDIRworker()
+            Case 4
+                'informatico
+                wor = New classITworker()
+            Case 5
+                'transportista
+                wor = New classTRworker()
+            Case Else
+        End Select
 
     End Sub
 End Class
