@@ -59,15 +59,6 @@ Partial Public Class newWorker
     Protected WithEvents TextBox4 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control TextBox5.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents TextBox5 As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
     '''Control DropDownList1.
     '''</summary>
     '''<remarks>

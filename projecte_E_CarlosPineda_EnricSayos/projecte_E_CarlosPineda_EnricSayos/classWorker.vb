@@ -1,23 +1,12 @@
-﻿Public Class classWorker
-    Private workerId As Integer
-    Private name As String
-    Private surname1 As String
-    Private surname2 As String
-    Private dni As String
-    Private category As String
+﻿Public MustInherit Class classWorker
+    Protected workerId As Integer
+    Protected name As String
+    Protected surname1 As String
+    Protected surname2 As String
+    Protected dni As String
+    Protected category As String
     Private hourlyWage As Double
     Public Const maxHours As Integer = 120
-
-
-    Public Sub New(workerId As Integer, name As String, surname1 As String, surname2 As String, dni As String, category As String, hourlyWage As Double)
-        WorkerId1 = workerId
-        Name1 = name
-        Surname11 = surname1
-        Surname21 = surname2
-        Dni1 = dni
-        Category1 = category
-        HourlyWage1 = hourlyWage
-    End Sub
 
     Public Property WorkerId1 As Integer
         Get
@@ -81,4 +70,5 @@
             hourlyWage = value
         End Set
     End Property
+
 End Class

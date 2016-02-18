@@ -372,9 +372,14 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="App_Start\Startup.Auth.vb" />
+    <Compile Include="classADworker.vb" />
+    <Compile Include="classCONworker.vb" />
     <Compile Include="classCourse.vb" />
+    <Compile Include="classDIRworker.vb" />
     <Compile Include="classEnrollment.vb" />
     <Compile Include="classEnterprise.vb" />
+    <Compile Include="classITworker.vb" />
+    <Compile Include="classTRworker.vb" />
     <Compile Include="classWorker.vb" />
     <Compile Include="Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -455,7 +460,6 @@
       <DependentUpon>newWorker.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="populateEnterprise.vb" />
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
