@@ -30,10 +30,7 @@
         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;
         <br />
-        <br />
-        Hourly wage:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList1" runat="server">
