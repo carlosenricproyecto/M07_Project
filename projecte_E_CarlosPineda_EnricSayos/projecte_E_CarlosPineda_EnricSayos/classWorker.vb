@@ -5,8 +5,8 @@
     Protected surname2 As String
     Protected dni As String
     Protected category As String
-    Private hourlyWage As Double
-    Public Const maxHours As Integer = 120
+    Protected hourlyWage As Double
+    Protected Const maxHours As Integer = 120
 
     Public Property WorkerId1 As Integer
         Get
