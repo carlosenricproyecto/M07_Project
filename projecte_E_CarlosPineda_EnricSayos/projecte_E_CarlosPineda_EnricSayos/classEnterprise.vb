@@ -1,18 +1,20 @@
-﻿Public Class classEnterprise
+﻿Imports projecte_E_CarlosPineda_EnricSayos
+
+Public Class classEnterprise
     Private enterpriseId As Integer
     Private name As String
     Private cif As String
-    Private workerList As ArrayList
-    Private courses As ArrayList
-    Private enrollments As ArrayList
+    Private workerList As List(Of classWorker)
+    Private courses As List(Of classCourse)
+    Private enrollments As List(Of classEnrollment)
 
     Public Sub New(enterpriseId As Integer, name As String, cif As String)
         EnterpriseId1 = enterpriseId
         Name1 = name
         Cif1 = cif
-        Me.workerList = New ArrayList
-        Me.courses = New ArrayList
-        Me.enrollments = New ArrayList
+        Me.WorkerList1 = New List(Of classWorker)
+        Me.Courses1 = New List(Of classCourse)
+        Me.Enrollments1 = New List(Of classEnrollment)
     End Sub
 
     Public Property EnterpriseId1 As Integer
@@ -42,30 +44,34 @@
         End Set
     End Property
 
-    Public Property WorkerList1 As ArrayList
+    Public Property WorkerList1 As List(Of classWorker)
         Get
             Return workerList
         End Get
-        Set(value As ArrayList)
+        Set(value As List(Of classWorker))
             workerList = value
         End Set
     End Property
 
-    Public Property Courses1 As ArrayList
+    Public Property Courses1 As List(Of classCourse)
         Get
             Return courses
         End Get
-        Set(value As ArrayList)
+        Set(value As List(Of classCourse))
             courses = value
         End Set
     End Property
 
-    Public Property Enrollments1 As ArrayList
+    Public Property Enrollments1 As List(Of classEnrollment)
         Get
             Return enrollments
         End Get
-        Set(value As ArrayList)
+        Set(value As List(Of classEnrollment))
             enrollments = value
         End Set
     End Property
+
+    Public Sub addWorker()
+
+    End Sub
 End Class
