@@ -1,3 +1,3 @@
 ﻿Module Enterprise
-    Dim int As Integer
+    Dim int As String
 End Module
