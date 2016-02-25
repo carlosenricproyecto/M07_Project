@@ -5,16 +5,25 @@
     Protected surname2 As String
     Protected dni As String
     Protected hourlyWage As Double
+    Protected categories As List(Of String)
     Protected Const maxHours As Integer = 120
 
-    Public Sub New(workerId As Integer, name As String, surname1 As String, surname2 As String, dni As String)
+    Public Sub New(workerId As Integer, name As String, surname1 As String, surname2 As String, dni As String, categories As List(Of String))
         Me.WorkerId1 = workerId
         Me.Name1 = name
         Me.Surname11 = surname1
         Me.Surname21 = surname2
         Me.Dni1 = dni
+        Me.categories1 = categories
     End Sub
-
+    Public Property categories1 As List(Of String)
+        Get
+            Return categories
+        End Get
+        Set(value As List(Of String))
+            categories = value
+        End Set
+    End Property
     Public Property WorkerId1 As Integer
         Get
             Return workerId
