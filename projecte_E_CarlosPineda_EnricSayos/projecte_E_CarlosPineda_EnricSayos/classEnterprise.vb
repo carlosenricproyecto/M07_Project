@@ -75,22 +75,27 @@ Public Class classEnterprise
         Dim wor
         Select Case type
             Case 1
-                'administrativo
-                wor = New classADworker(workerId, name, surname1, surname2, dni)
+                'info
+                wor = New classITworker(workerId, name, surname1, surname2, dni)
             Case 2
+                'admin
+                wor = New classADworker(workerId, name, surname1, surname2, dni)
+            Case 3
+                'trans
+                wor = New classTRworker(workerId, name, surname1, surname2, dni)
+            Case 4
+                'dir
+                wor = New classDIRworker(workerId, name, surname1, surname2, dni)
+            Case 5
                 'contable
                 wor = New classCONworker(workerId, name, surname1, surname2, dni)
-            Case 3
-                'directivo
-                wor = New classDIRworker(workerId, name, surname1, surname2, dni)
-            Case 4
-                'informatico
-                wor = New classITworker(workerId, name, surname1, surname2, dni)
-            Case 5
-                'transportista
-                wor = New classTRworker(workerId, name, surname1, surname2, dni)
             Case Else
         End Select
+        Try
+            Me.Courses1.Add(wor)
+        Catch ex As Exception
+            MsgBox(ex)
+        End Try
 
     End Sub
 End Class
