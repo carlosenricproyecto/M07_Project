@@ -92,7 +92,29 @@ Public Class classEnterprise
             Case Else
         End Select
         Try
-            Me.Courses1.Add(wor)
+            Me.WorkerList1.Add(wor)
+        Catch ex As Exception
+            MsgBox(ex)
+        End Try
+
+    End Sub
+
+    Public Sub addCourse(courseId As Integer, courseName As String, courseHours As String, courseType As String, courseTheme As String, startDate As Date, endDate As Date, active As Boolean)
+        Dim crs
+        crs = New classCourse(courseId, courseName, courseHours, courseType, courseTheme, startDate, endDate, active)
+        Try
+            Me.Courses1.Add(crs)
+        Catch ex As Exception
+            MsgBox(ex)
+        End Try
+
+    End Sub
+
+    Public Sub doEnrollment(idEnrollment As Integer, worker As classWorker, course As classCourse, enrollmentYear As Date)
+        Dim enr
+        enr = New classEnrollment(idEnrollment, worker, course, enrollmentYear)
+        Try
+            Me.Enrollments1.Add(enr)
         Catch ex As Exception
             MsgBox(ex)
         End Try
