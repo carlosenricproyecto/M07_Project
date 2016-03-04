@@ -24,24 +24,34 @@
         <br />
         Theme:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem>Computer Science</asp:ListItem>
+            <asp:ListItem>Manual</asp:ListItem>
+            <asp:ListItem>Others</asp:ListItem>
         </asp:DropDownList>
         <br />
         <br />
         Type:<br />
         <br />
         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+            <asp:ListItem>extension</asp:ListItem>
+            <asp:ListItem>retraining</asp:ListItem>
         </asp:RadioButtonList>
         <br />
         <br />
-        Start date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        Start date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+        &nbsp;<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
-        End date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        End date:&nbsp;<br />
+        <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Text="INSERT" />
+    
+    &nbsp;&nbsp;
+        <asp:Button ID="Button2" runat="server" Text="Menu" />
     
     </div>
     </form>

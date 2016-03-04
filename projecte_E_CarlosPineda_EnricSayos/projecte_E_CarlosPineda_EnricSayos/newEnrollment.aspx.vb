@@ -54,12 +54,7 @@
                         End If
                     Next
                 Next
-                For i As Integer = 0 To entr.Enrollments1.Count - 1
-                    MsgBox(entr.Enrollments1(i).IdEnrollment1)
-                    MsgBox(entr.Enrollments1(i).Course1.CourseName1)
-                    MsgBox(entr.Enrollments1(i).Worker1.Name1)
 
-                Next
             End If
         Catch ex As Exception
             MsgBox(ex.Message)

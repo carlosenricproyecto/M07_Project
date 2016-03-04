@@ -24,4 +24,8 @@
     Protected Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Response.Redirect("allCourses.aspx")
     End Sub
+
+    Protected Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Response.Redirect("allEnrollments.aspx")
+    End Sub
 End Class

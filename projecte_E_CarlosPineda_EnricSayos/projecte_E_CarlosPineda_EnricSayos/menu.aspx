@@ -25,6 +25,10 @@
         <br />
         <asp:Button ID="Button5" runat="server" Text="All Courses" Width="106px" />
     
+        <br />
+        <br />
+        <asp:Button ID="Button6" runat="server" Text="All Enrollments" Width="105px" />
+    
     </div>
     </form>
 </body>

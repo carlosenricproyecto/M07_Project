@@ -72,6 +72,7 @@ Public Class classEnterprise
     End Property
 
     Public Sub addWorker(type As Integer, workerId As Integer, name As String, surname1 As String, surname2 As String, dni As String)
+
         Dim wor
         Select Case type
             Case 1
@@ -99,9 +100,61 @@ Public Class classEnterprise
 
     End Sub
 
+    Public Sub addWorker(type As Integer, name As String, surname1 As String, surname2 As String, dni As String)
+        Dim id As Integer
+        If entr.WorkerList1.Count > 0 Then
+            id = entr.WorkerList1(entr.WorkerList1.Count - 1).WorkerId1 + 1
+        Else
+            id = 1
+        End If
+        Dim wor
+        Select Case type
+            Case 1
+                'info
+                wor = New classITworker(id, name, surname1, surname2, dni)
+            Case 2
+                'admin
+                wor = New classADworker(id, name, surname1, surname2, dni)
+            Case 3
+                'trans
+                wor = New classTRworker(id, name, surname1, surname2, dni)
+            Case 4
+                'dir
+                wor = New classDIRworker(id, name, surname1, surname2, dni)
+            Case 5
+                'contable
+                wor = New classCONworker(id, name, surname1, surname2, dni)
+            Case Else
+        End Select
+        Try
+            Me.WorkerList1.Add(wor)
+        Catch ex As Exception
+            MsgBox(ex)
+        End Try
+
+    End Sub
+
+
     Public Sub addCourse(courseId As Integer, courseName As String, courseHours As String, courseType As String, courseTheme As String, startDate As Date, endDate As Date, active As Boolean)
         Dim crs
         crs = New classCourse(courseId, courseName, courseHours, courseType, courseTheme, startDate, endDate, active)
+        Try
+            Me.Courses1.Add(crs)
+        Catch ex As Exception
+            MsgBox(ex)
+        End Try
+
+    End Sub
+
+    Public Sub addCourse(courseName As String, courseHours As String, courseType As String, courseTheme As String, startDate As Date, endDate As Date, active As Boolean)
+        Dim id As Integer
+        If entr.Courses1.Count > 0 Then
+            id = entr.Courses1(entr.Courses1.Count - 1).CourseId1 + 1
+        Else
+            id = 1
+        End If
+        Dim crs
+        crs = New classCourse(id, courseName, courseHours, courseType, courseTheme, startDate, endDate, active)
         Try
             Me.Courses1.Add(crs)
         Catch ex As Exception
