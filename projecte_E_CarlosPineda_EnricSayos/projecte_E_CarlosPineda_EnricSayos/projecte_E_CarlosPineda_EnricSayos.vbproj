@@ -195,6 +195,9 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="allCourses.aspx" />
+    <Content Include="allEnrollments.aspx" />
+    <Content Include="allWorkers.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -360,6 +363,27 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.vb">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="allCourses.aspx.designer.vb">
+      <DependentUpon>allCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allCourses.aspx.vb">
+      <DependentUpon>allCourses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="allEnrollments.aspx.designer.vb">
+      <DependentUpon>allEnrollments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allEnrollments.aspx.vb">
+      <DependentUpon>allEnrollments.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="allWorkers.aspx.designer.vb">
+      <DependentUpon>allWorkers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allWorkers.aspx.vb">
+      <DependentUpon>allWorkers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\IdentityConfig.vb" />

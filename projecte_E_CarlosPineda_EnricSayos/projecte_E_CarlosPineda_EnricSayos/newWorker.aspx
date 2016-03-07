@@ -34,11 +34,18 @@
         <br />
         Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem Selected="True" Value="1">info</asp:ListItem>
+            <asp:ListItem Value="2">admin</asp:ListItem>
+            <asp:ListItem Value="3">trans</asp:ListItem>
+            <asp:ListItem Value="4">dir</asp:ListItem>
+            <asp:ListItem Value="5">conta</asp:ListItem>
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
     </div>
         <asp:Button ID="Button1" runat="server" Text="Insert" />
+    &nbsp;&nbsp;
+        <asp:Button ID="Button2" runat="server" CausesValidation="False" Text="Menu" />
     </form>
 </body>
 </html>
